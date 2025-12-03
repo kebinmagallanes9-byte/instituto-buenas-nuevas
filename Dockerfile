@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim 
+FROM eclipse-temurin:17
 COPY . .   
 RUN chmod +x mvnw 
 RUN ./mvnw clean install -DskipTests 
